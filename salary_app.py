@@ -25,7 +25,10 @@ education_mapping = {
 available_countries = ["Canada", "Australia", "Bangladesh", "Brazil", "South Africa", "South Korea",
                        "Spain", "Taiwan", "Thailand", "Tunisia", "Turkey", 
                        "United Kingdom of Great Britain and Northern Ireland",
-                       "United States of America", "Vietnam" , "Other"]  # Canada is the reference (not one-hot encoded)
+                       "United States of America", "Vietnam" , "Chile",
+                       "China",
+                       "Columbia"
+                       "Egypt", "Other"]  # Canada is the reference (not one-hot encoded)
 
         
 
@@ -70,7 +73,12 @@ features = {
     "Country_United Kingdom of Great Britain and Northern Ireland": 0,
     "Country_United States of America" : 0,  
     "Country_Viet Nam" : 0,
-    "Country_Canada" : 0
+    "Country_Canada" : 0,
+    "Country_Chile" : 0,
+    "Country_China": 0,
+    "Country_Colombia": 0,
+    "Country_Egypt": 0,
+    "Country_France": 0,
 }
 if country != "Canada":
     valid_countries = {
@@ -87,6 +95,10 @@ if country != "Canada":
         "United Kingdom of Great Britain and Northern Ireland",
         "Viet Nam",
         "United States of America",
+        "Chile",
+        "China",
+        "Columbia"
+        "Egypt",
         "Other"
     }
 
