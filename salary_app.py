@@ -22,7 +22,7 @@ education_mapping = {
 }
 
 # Available countries based on cleaned data model (excluding reference category 'Canada')
-available_countries = ["Australia", "Bangladesh", "Brazil", "South Africa", "South Korea",
+available_countries = ["Canada", "Australia", "Bangladesh", "Brazil", "South Africa", "South Korea",
                        "Spain", "Taiwan", "Thailand", "Tunisia", "Turkey", 
                        "United Kingdom of Great Britain and Northern Ireland",
                        "United States of America", "Vietnam" , "Other"]  # Canada is the reference (not one-hot encoded)
@@ -51,10 +51,10 @@ education_num = education_mapping[education]
 features = {
     "Education": education_num,
     "Years_Coding": years_coding,
-    #"Codes_In_JAVA": int(codes_java),
-    #"Codes_In_Python": int(codes_python),
-    #"Codes_In_SQL": int(codes_sql),
-    #"Codes_In_GO": int(codes_go),
+    "Codes_In_JAVA": int(codes_java),
+    "Codes_In_Python": int(codes_python),
+    "Codes_In_SQL": int(codes_sql),
+    "Codes_In_GO": int(codes_go),
     # One-hot encoded country features (Canada is the reference, so all 0 if Canada)
     "Country_Other": 0,
     "Country_Australia": 0,  
@@ -69,10 +69,11 @@ features = {
     "Country_Turkey": 0,
     "Country_United Kingdom of Great Britain and Northern Ireland": 0,
     "Country_United States of America" : 0,  
-    "Country_Viet Nam" : 0
+    "Country_Viet Nam" : 0,
+    "Country_Canada" : 0
 }
-if country != "Canada":
-    valid_countries = {
+valid_countries = {
+        "Canada",
         "Australia",
         "Bangladesh",
         "Brazil",
