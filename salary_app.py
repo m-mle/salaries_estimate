@@ -94,8 +94,8 @@ if country != "Canada":
 
     if country in valid_countries:
         features[f"Country_{country}"] = 1
-        else :
-            features["Country_Canada"] = 1
+    else: 
+        features["Country_Canada"] = 1
 
 
 
