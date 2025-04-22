@@ -72,8 +72,8 @@ features = {
     "Country_Viet Nam" : 0,
     "Country_Canada" : 0
 }
-valid_countries = {
-        "Canada",
+if country != "Canada":
+    valid_countries = {
         "Australia",
         "Bangladesh",
         "Brazil",
@@ -94,6 +94,9 @@ valid_countries = {
 
     if country in valid_countries:
         features[f"Country_{country}"] = 1
+        else{
+            features["Country_Canada"] = 1
+
 
 
 # Convert to DataFrame for prediction
