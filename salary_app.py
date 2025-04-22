@@ -92,7 +92,10 @@ features = {
     "Country_Netherlands": 0,
     "Country_Nigeria" : 0,
     "Country_Pakistan" : 0,
-    "Country_Peru" : 0
+    "Country_Peru" : 0,
+    "Country_Philippines": 0,
+    "Country_Poland" : 0,
+    "Country_Russia" : 0
 }
 if country != "Canada":
     valid_countries = {
