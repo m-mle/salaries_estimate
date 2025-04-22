@@ -50,7 +50,7 @@ education_num = education_mapping[education]
 # Create feature dictionary
 features = {
     "Education": education_num,
-    #"Years_Coding": years_coding,
+    "Years_Coding": years_coding,
     #"Codes_In_JAVA": int(codes_java),
     #"Codes_In_Python": int(codes_python),
     #"Codes_In_SQL": int(codes_sql),
