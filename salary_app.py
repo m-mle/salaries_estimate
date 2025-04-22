@@ -82,8 +82,12 @@ features = {
     "Country_Ghana" : 0,
     "Country_India" : 0,
     "Country_Indonesia" : 0,
-    "Country_Iran, Islamic Republic of" : 0,
-    "Country_Israel": 0
+    "Country_Iran, Islamic Republic of..." : 0,
+    "Country_Israel": 0,
+    "Country_Italy" : 0,
+    "Country_Japan" : 0,
+    "Country_Kenya" : 0,
+    "Country_Mexico" : 0
 }
 if country != "Canada":
     valid_countries = {
